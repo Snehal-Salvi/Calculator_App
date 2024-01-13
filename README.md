@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# Calculator App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple and efficient calculator app built with React! This application allows users to perform basic arithmetic operations and percentage calculations with ease.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Basic Operations:** Addition, subtraction, multiplication, and division.
+- **Percentage Calculations:** Quickly calculate percentages with a single click.
+- **Clear Input:** Use the "AC" button to clear the input and start fresh.
 
-### `npm start`
+- **Delete Functionality:** Accidentally typed the wrong digit? No worries! The "DEL" button helps you remove the last character.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Error Handling:** Our app is equipped with error handling to gracefully manage invalid expressions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## How to Use
 
-### `npm test`
+- Input numbers and perform calculations by clicking the corresponding buttons.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Use the "AC" button to clear the input and start a new calculation.
 
-### `npm run build`
+- Hit the "DEL" button to remove the last character.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Project Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To run this app locally, follow these simple steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone Repository**
 
-### `npm run eject`
+2. **Navigate to Directory** 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Install Dependencies:** `npm install`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Start Development Server:** `npm start`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+5. **View in Browser:** Open [http://localhost:3000](http://localhost:3000) in your preferred browser.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project Structure
 
-## Learn More
+1. **CalculatorApp Component:**
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Contains the main structure of the calculator app.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. **CalculatorForm Component:**
 
-### Code Splitting
+- Manages the form element and handles the overall layout of the calculator.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. **ButtonRow Component:**
 
-### Analyzing the Bundle Size
+- Generates a row of buttons based on an array of button values and a click handler function.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+4. **CalculatorButton Component:**
 
-### Making a Progressive Web App
+- Represents a single calculator button.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+5. **Display Component:**
 
-### Advanced Configuration
+- Handles the input display.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Technologies Used
 
-### Deployment
+- **ReactJS**
+- **JavaScript (JS)**
+- **HTML**
+- **CSS**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Authors
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[@Snehal-Salvi](https://github.com/Snehal-Salvi)

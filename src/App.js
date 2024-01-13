@@ -1,23 +1,39 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import CalculatorForm from './components/CalculatorForm';
 import './App.css';
 
 function App() {
+  const [value, setValue] = useState("");
+
+  const handleButtonClick = (buttonValue) => {
+    if (buttonValue === 'DEL') {
+      // Delete the last character
+      setValue((prevValue) => prevValue.slice(0, -1));
+    } else if (buttonValue === 'AC') {
+      // Clear the input
+      setValue("");
+    } else {
+      setValue((prevValue) => prevValue + buttonValue);
+    }
+  };
+
+  const handleEquals = () => {
+    try {
+      // Perform percentage calculation by replacing '%' with '*0.01'
+      const result = eval(value.replace(/%/g, '*0.01'));
+      setValue(result.toString());
+    } catch (error) {
+      // Handle errors if the expression is invalid
+      setValue("Error");
+    }
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1 className="heading">Calculator App</h1>
+      <div className="calculator">
+        <CalculatorForm value={value} handleButtonClick={handleButtonClick} handleEquals={handleEquals} />
+      </div>
     </div>
   );
 }
